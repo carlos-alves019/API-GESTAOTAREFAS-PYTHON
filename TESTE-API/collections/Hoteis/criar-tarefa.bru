@@ -1,0 +1,22 @@
+meta {
+  name: criar-tarefa
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:5000/tarefas
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDg0Mzc2NCwianRpIjoiYTgxYzI5ODEtNjk1Ny00MzA2LWI2ZjktYzljNzI2ZjVmMDk5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQ4NDM3NjQsImNzcmYiOiIxNzY4ODFmYi1jZjZhLTRkYTYtYTU2MC1jYzFlYWU3OTk3ZWUiLCJleHAiOjE3OTQ4NDQ2NjQsInRpcG8iOiJ1dGlsaXphZG9yIn0.fgdyroqqakLh3E5JiTgqnvBlyTU5nvO63dn0-gQZyzg
+}
+
+body:json {
+  {
+    "titulo": "Estudar API",
+    "descricao": "Primeira tarefa"
+  }
+}
